@@ -1,7 +1,10 @@
 public class Calculator  {
-    public int add(String s1, String s2) {
-        int a = Integer.parseInt(s1);
-        int b = Integer.parseInt(s2);
+    public int add(short a, short b) {
+
+        if(a + b > Integer.MAX_VALUE){
+            return -1;
+        }
         return a + b;
+
     }
 }
