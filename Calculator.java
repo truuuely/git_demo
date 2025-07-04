@@ -1,8 +1,9 @@
 public class Calculator  {
-    public int add(String str1, String str2) {
+    public int add(short a, short b) {
         // 주석 주석
-        int a = Integer.parseInt(str1);
-        int b = Integer.parseInt(str2);
+        if(a + b > Integer.MAX_VALUE){
+            return -1;
+        }
         return a + b;
     }
 }
